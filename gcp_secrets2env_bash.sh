@@ -3,7 +3,7 @@
 ENV_FILEPATH=".env"
 
 # Clean .env file
-echo "" > $ENV_FILEPATH
+rm $ENV_FILEPATH
 
 gcloud secrets list | sed 1d | awk '{print $1}' | while read VAR_NAME
 do

@@ -1,0 +1,1 @@
+# gcp-secrets2env-bash
